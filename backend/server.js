@@ -296,6 +296,10 @@ app.get('/api/leads', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Velvet CMS API Server running at http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Velvet CMS API Server running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
