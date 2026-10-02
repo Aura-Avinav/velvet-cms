@@ -26,8 +26,8 @@ export default function Hero({ onOpenDemo }) {
       <div className="container">
         {/* Luxury Pill Tag */}
         <div className="hero-pill-tag">
-          <div className="badge badge-bordeaux" style={{ padding: '0.45rem 1.1rem', fontSize: '0.78rem' }}>
-            <Sparkles size={14} color="#7A9B76" />
+          <div className="badge badge-cerulean" style={{ padding: '0.45rem 1.1rem', fontSize: '0.78rem' }}>
+            <Sparkles size={14} color="#2274A5" />
             <span>VELVET 3.4 • UNIFYING HEADLESS CMS WITH LIVE VISUAL STUDIO</span>
           </div>
         </div>
@@ -35,15 +35,15 @@ export default function Hero({ onOpenDemo }) {
         {/* Main Grand Headline */}
         <h1 className="hero-title">
           The Content Engine for{' '}
-          <span className="gradient-text-bordeaux">Disciplined Designers</span>{' '}
+          <span className="gradient-text-accent">Disciplined Designers</span>{' '}
           & Engineers.
         </h1>
 
         {/* Subtitle */}
         <p className="hero-subtitle">
           Eliminate the friction between rigid templates and developer workflows. Velvet unifies 
-          an ultra-fast <strong style={{ color: '#7A9B76' }}>GraphQL & REST edge engine</strong> with a 
-          rich, real-time <strong style={{ color: '#C8BFC7' }}>visual block editor</strong> crafted with surgical aesthetic precision.
+          an ultra-fast <strong style={{ color: '#2274A5' }}>GraphQL & REST edge engine</strong> with a 
+          rich, real-time <strong style={{ color: '#E9F1F7' }}>visual block editor</strong> crafted with surgical aesthetic precision.
         </p>
 
         {/* Action Buttons */}
@@ -53,11 +53,11 @@ export default function Hero({ onOpenDemo }) {
             <ArrowRight size={18} />
           </a>
           <a href="#apis" className="btn btn-secondary btn-lg">
-            <Terminal size={18} color="#C8BFC7" />
+            <Terminal size={18} color="#E9F1F7" />
             <span>Developer API Playground</span>
           </a>
-          <button onClick={onOpenDemo} className="btn btn-bordeaux btn-lg">
-            <ShieldCheck size={18} color="#C8BFC7" />
+          <button onClick={onOpenDemo} className="btn btn-cerulean btn-lg">
+            <ShieldCheck size={18} color="#E9F1F7" />
             <span>Request Enterprise Access</span>
           </button>
         </div>
@@ -66,7 +66,7 @@ export default function Hero({ onOpenDemo }) {
         <div className="metrics-strip">
           <div className="metric-item">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
-              <Zap size={18} color="#7A9B76" />
+              <Zap size={18} color="#2274A5" />
               <span className="metric-num">{stats.apiLatency}</span>
             </div>
             <span className="metric-label">Median Edge Latency</span>
@@ -74,7 +74,7 @@ export default function Hero({ onOpenDemo }) {
 
           <div className="metric-item">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
-              <ShieldCheck size={18} color="#7A9B76" />
+              <ShieldCheck size={18} color="#2274A5" />
               <span className="metric-num">{stats.uptime}</span>
             </div>
             <span className="metric-label">Guaranteed Edge SLA</span>
@@ -82,7 +82,7 @@ export default function Hero({ onOpenDemo }) {
 
           <div className="metric-item">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
-              <Globe size={18} color="#7A9B76" />
+              <Globe size={18} color="#2274A5" />
               <span className="metric-num">{stats.monthlyQueries}</span>
             </div>
             <span className="metric-label">Monthly Content Queries</span>
@@ -90,7 +90,7 @@ export default function Hero({ onOpenDemo }) {
 
           <div className="metric-item">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
-              <Cpu size={18} color="#7A9B76" />
+              <Cpu size={18} color="#2274A5" />
               <span className="metric-num">{stats.customerRating}</span>
             </div>
             <span className="metric-label">Developer Satisfaction</span>

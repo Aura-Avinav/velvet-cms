@@ -3,14 +3,14 @@ import { ChevronLeft, ChevronRight, Quote, Star, Play, Pause, TrendingUp } from 
 
 const TESTIMONIALS = [
   {
-    quote: "Velvet CMS is the first platform where our creative directors didn't feel handcuffed by developer schemas, and our frontend engineers never had to compromise on strict GraphQL type definitions. The Night Bordeaux aesthetic is just sublime.",
+    quote: "Velvet CMS is the first platform where our creative directors didn't feel handcuffed by developer schemas, and our frontend engineers never had to compromise on strict GraphQL type definitions. The Rich Cerulean and Sand Dune aesthetic is just sublime.",
     author: "Julian Vance",
     role: "Design Director",
     company: "Atelier Monolith (London & Paris)",
     initials: "JV",
     metricLabel: "Publishing Velocity",
     metricValue: "+340%",
-    accent: "bordeaux"
+    accent: "cerulean"
   },
   {
     quote: "We migrated 18 digital publications to Velvet's MERN-powered edge engine. Our median cache hit ratio jumped to 99.4%, and we cut our CDN infrastructure costs by 62% in the first quarter alone.",
@@ -20,17 +20,17 @@ const TESTIMONIALS = [
     initials: "PN",
     metricLabel: "Median Global Latency",
     metricValue: "36ms",
-    accent: "sage"
+    accent: "sand"
   },
   {
     quote: "The visual block studio gave our editorial staff superpowers. They can assemble bespoke longform features in minutes without requesting single-page template pull requests from engineering.",
     author: "Alexandre Moreau",
     role: "Head of Digital Architecture",
-    company: "Bordeaux & Co. Publishing",
+    company: "Cerulean & Co. Publishing",
     initials: "AM",
     metricLabel: "Editorial Output",
     metricValue: "4.8x",
-    accent: "olive"
+    accent: "coffee"
   },
   {
     quote: "The Next.js 15 App Router integration was seamless. Having zero-bundle-size server components hydrate with live studio edits in preview mode made our engineering team fall in love instantly.",
@@ -40,7 +40,7 @@ const TESTIMONIALS = [
     initials: "SL",
     metricLabel: "Time-to-Production",
     metricValue: "-70%",
-    accent: "sage"
+    accent: "cerulean"
   }
 ];
 
@@ -71,14 +71,14 @@ export default function TestimonialCarousel() {
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <div className="badge badge-sage" style={{ marginBottom: '1rem' }}>
-            <Star size={14} fill="#7A9B76" />
+          <div className="badge badge-sand" style={{ marginBottom: '1rem' }}>
+            <Star size={14} fill="#2274A5" color="#2274A5" />
             <span>VERIFIED CASE STUDIES & TESTIMONIALS</span>
           </div>
           <h2 style={{ fontSize: 'clamp(2rem, 3.8vw, 3rem)', marginBottom: '0.75rem' }}>
             Trusted by the World's Leading Publishers
           </h2>
-          <p style={{ maxWidth: '620px', margin: '0 auto', color: '#8A7E72' }}>
+          <p style={{ maxWidth: '620px', margin: '0 auto', color: '#E7DFC6', opacity: 0.85 }}>
             Discover how visionary media companies and design agencies transform their publishing 
             cadence with Velvet CMS.
           </p>
@@ -93,16 +93,16 @@ export default function TestimonialCarousel() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.5rem',
-                background: 'rgba(122, 155, 118, 0.15)',
+                background: 'rgba(34, 116, 165, 0.15)',
                 padding: '0.4rem 0.9rem',
                 borderRadius: '999px',
-                border: '1px solid rgba(122, 155, 118, 0.35)',
-                color: '#7A9B76',
+                border: '1px solid rgba(34, 116, 165, 0.4)',
+                color: '#E9F1F7',
                 fontSize: '0.8rem',
                 fontWeight: 700
               }}>
-                <TrendingUp size={15} />
-                <span>{item.metricLabel}: <strong style={{ color: '#C8BFC7' }}>{item.metricValue}</strong></span>
+                <TrendingUp size={15} color="#2274A5" />
+                <span>{item.metricLabel}: <strong style={{ color: '#E9F1F7' }}>{item.metricValue}</strong></span>
               </div>
 
               <button 
@@ -111,14 +111,14 @@ export default function TestimonialCarousel() {
                 style={{ padding: '0.3rem 0.65rem', fontSize: '0.75rem' }}
                 title={isAutoPlaying ? 'Pause rotation' : 'Resume auto rotation'}
               >
-                {isAutoPlaying ? <Pause size={12} color="#8A7E72" /> : <Play size={12} color="#7A9B76" />}
-                <span style={{ color: '#8A7E72' }}>{isAutoPlaying ? 'Auto' : 'Paused'}</span>
+                {isAutoPlaying ? <Pause size={12} color="#E7DFC6" /> : <Play size={12} color="#2274A5" />}
+                <span style={{ color: '#E7DFC6' }}>{isAutoPlaying ? 'Auto' : 'Paused'}</span>
               </button>
             </div>
 
             {/* Large Quote Mark */}
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-              <Quote size={40} color="#5A2328" style={{ opacity: 0.85 }} />
+              <Quote size={40} color="#2274A5" style={{ opacity: 0.85 }} />
             </div>
 
             {/* Quote Body */}
@@ -129,16 +129,16 @@ export default function TestimonialCarousel() {
             {/* Author Profile */}
             <div className="testimonial-author-box">
               <div className="author-avatar" style={{
-                borderColor: item.accent === 'sage' ? '#7A9B76' : item.accent === 'bordeaux' ? '#5A2328' : '#8A7E72'
+                borderColor: (item.accent === 'cerulean' || item.accent === 'bordeaux') ? '#2274A5' : item.accent === 'sand' ? '#E7DFC6' : '#2A140E'
               }}>
                 {item.initials}
               </div>
               <div style={{ textAlign: 'left' }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.05rem', color: '#C8BFC7' }}>
+                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.05rem', color: '#E9F1F7' }}>
                   {item.author}
                 </div>
-                <div style={{ fontSize: '0.825rem', color: '#8A7E72' }}>
-                  {item.role} • <span style={{ color: '#7A9B76' }}>{item.company}</span>
+                <div style={{ fontSize: '0.825rem', color: '#E7DFC6', opacity: 0.85 }}>
+                  {item.role} • <span style={{ color: '#2274A5' }}>{item.company}</span>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function TestimonialCarousel() {
               style={{ width: '42px', height: '42px', padding: 0, borderRadius: '50%' }}
               aria-label="Previous Testimonial"
             >
-              <ChevronLeft size={20} color="#C8BFC7" />
+              <ChevronLeft size={20} color="#E9F1F7" />
             </button>
 
             {/* Dots */}
@@ -170,7 +170,7 @@ export default function TestimonialCarousel() {
                     width: idx === currentIdx ? '28px' : '9px',
                     height: '9px',
                     borderRadius: '999px',
-                    background: idx === currentIdx ? '#7A9B76' : 'rgba(138, 126, 114, 0.35)',
+                    background: idx === currentIdx ? '#2274A5' : 'rgba(231, 223, 198, 0.3)',
                     border: 'none',
                     cursor: 'pointer',
                     transition: 'all 0.25s ease'
@@ -186,7 +186,7 @@ export default function TestimonialCarousel() {
               style={{ width: '42px', height: '42px', padding: 0, borderRadius: '50%' }}
               aria-label="Next Testimonial"
             >
-              <ChevronRight size={20} color="#C8BFC7" />
+              <ChevronRight size={20} color="#E9F1F7" />
             </button>
           </div>
         </div>

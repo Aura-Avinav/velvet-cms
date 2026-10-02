@@ -25,9 +25,9 @@ export default function App() {
     <div className="velvet-app-root" style={{ position: 'relative', minHeight: '100vh' }}>
       {/* Background Atmosphere Elements */}
       <div className="bg-grid-pattern"></div>
-      <div className="bg-ambient-orb orb-bordeaux-1"></div>
-      <div className="bg-ambient-orb orb-sage-1"></div>
-      <div className="bg-ambient-orb orb-bordeaux-2"></div>
+      <div className="bg-ambient-orb orb-cerulean-1"></div>
+      <div className="bg-ambient-orb orb-sand-1"></div>
+      <div className="bg-ambient-orb orb-coffee-2"></div>
 
       {/* Main Navigation */}
       <Navbar onOpenDemo={() => setIsDemoModalOpen(true)} />
@@ -63,7 +63,7 @@ export default function App() {
       {/* Live Toast Feedback Notice */}
       {toastMessage && (
         <div className="toast-notice">
-          <CheckCircle2 size={18} color="#7A9B76" />
+          <CheckCircle2 size={18} color="#2274A5" />
           <span style={{ fontSize: '0.875rem', fontWeight: 600 }}>{toastMessage}</span>
         </div>
       )}

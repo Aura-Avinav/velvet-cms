@@ -42,7 +42,7 @@ const inMemoryStore = {
         title: 'Architectures of Modern Stillness',
         subtitle: 'Bespoke editorial storytelling powered by structured headless content graphs and real-time visual canvases.',
         body: 'Crafted for designers, publishers, and modern engineering teams who demand precision and aesthetic discipline.',
-        accent: 'bordeaux',
+        accent: 'cerulean',
         published: true,
         metrics: { views: 1420, readTime: '4 min' }
       },
@@ -53,7 +53,7 @@ const inMemoryStore = {
         title: 'Decoupled Publishing Without The Complexity',
         subtitle: 'Instant CDN edge previews, sub-millisecond GraphQL queries, and zero layout shift.',
         body: 'Empower writers with WYSIWYG block mechanics while developers consume pure typed JSON with full schema parity across mobile, web, and IoT surfaces.',
-        accent: 'sage',
+        accent: 'sand',
         published: true,
         metrics: { views: 890, readTime: '6 min' }
       },
@@ -64,7 +64,7 @@ const inMemoryStore = {
         title: 'Design as an Operating System',
         subtitle: '"A CMS should elevate your creative voice, not constrain your layout into rigid templates."',
         body: '— Julian Vance, Design Director at Atelier Monolith',
-        accent: 'olive',
+        accent: 'coffee',
         published: true,
         metrics: { views: 2310, readTime: '2 min' }
       },
@@ -75,7 +75,7 @@ const inMemoryStore = {
         title: 'Publish in One Click across 12 Frameworks',
         subtitle: 'Native SDKs for Next.js, Nuxt, Astro, Remix, React Native, and Swift.',
         body: 'Connect your Git repositories and publish live changes directly to your production edge network.',
-        accent: 'sage',
+        accent: 'cerulean',
         published: true,
         metrics: { views: 760, readTime: '1 min' }
       }
@@ -102,7 +102,7 @@ app.get('/api/health', (req, res) => {
     status: 'online',
     timestamp: new Date().toISOString(),
     database: isMongoConnected ? 'mongodb' : 'in-memory-engine',
-    engine: 'Bordeaux-Sage CMS Core v3.4.2'
+    engine: 'Cerulean-Sand CMS Core v3.4.2'
   });
 });
 
@@ -154,7 +154,7 @@ app.get('/api/code-snippets', (req, res) => {
       label: 'REST API v2',
       language: 'bash',
       code: `curl -X GET "https://api.velvetcms.io/v2/content/pages/autumn-editorial" \\
-  -H "Authorization: Bearer sec_tok_live_9a7b76_5a2328" \\
+  -H "Authorization: Bearer sec_tok_live_2274a5_e7dfc6" \\
   -H "Accept-Encoding: gzip, br" \\
   -H "Content-Type: application/json"`
     },
@@ -164,7 +164,7 @@ app.get('/api/code-snippets', (req, res) => {
       code: `import { createClient } from '@velvet-cms/client';
 
 const client = createClient({
-  spaceId: 'space_studio_bordeaux',
+  spaceId: 'space_studio_cerulean',
   apiKey: process.env.VELVET_CMS_KEY,
   preview: false,
 });

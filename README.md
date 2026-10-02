@@ -4,11 +4,11 @@ A landing page and full-stack MERN application for **Velvet CMS**, engineered sp
 
 | Swatch | Color Name | Hex Code | Purpose in Design |
 |---|---|---|---|
-| ![#090302](https://via.placeholder.com/15/090302/000000?text=+) | **Pitch Black** | `#090302` | Deep foundational canvas, ambient backdrops, primary dark surfaces |
-| ![#5A2328](https://via.placeholder.com/15/5A2328/000000?text=+) | **Night Bordeaux** | `#5A2328` | Luxury cards, gradients, ambient atmospheric glow, key accents |
-| ![#8A7E72](https://via.placeholder.com/15/8A7E72/000000?text=+) | **Grey Olive** | `#8A7E72` | Subtle borders, structural dividers, secondary body typography |
-| ![#7A9B76](https://via.placeholder.com/15/7A9B76/000000?text=+) | **Sage Green** | `#7A9B76` | Primary action buttons, active indicators, live edge status, badges |
-| ![#C8BFC7](https://via.placeholder.com/15/C8BFC7/000000?text=+) | **Pale Slate** | `#C8BFC7` | Primary luxury typography, headlines, elevated contrast elements |
+| ![#2274A5](https://via.placeholder.com/15/2274A5/000000?text=+) | **Rich Cerulean** | `#2274A5` | Vibrant brand signature, primary CTA buttons, active state accents, interactive highlights |
+| ![#E7DFC6](https://via.placeholder.com/15/E7DFC6/000000?text=+) | **Sand Dune** | `#E7DFC6` | Warm elegant badges, secondary button highlights, subtle structural borders, warm text |
+| ![#E9F1F7](https://via.placeholder.com/15/E9F1F7/000000?text=+) | **Alice Blue** | `#E9F1F7` | Crisp high-contrast typography, primary headlines, elevated contrast elements |
+| ![#131B23](https://via.placeholder.com/15/131B23/000000?text=+) | **Ink Black** | `#131B23` | Deep midnight ink foundational canvas, ambient backdrops, primary dark surfaces |
+| ![#2A140E](https://via.placeholder.com/15/2A140E/000000?text=+) | **Coffee Bean** | `#2A140E` | Rich espresso depth, warm dark gradients, atmospheric glow, dark contrast accents |
 
 ---
 

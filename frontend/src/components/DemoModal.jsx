@@ -65,25 +65,25 @@ export default function DemoModal({ isOpen, onClose, showToast }) {
             right: '1.25rem',
             background: 'none',
             border: 'none',
-            color: '#8A7E72',
+            color: '#E7DFC6',
             cursor: 'pointer'
           }}
           aria-label="Close modal"
         >
-          <X size={20} color="#C8BFC7" />
+          <X size={20} color="#E9F1F7" />
         </button>
 
         {!isSubmitted ? (
           <div>
-            <div className="badge badge-bordeaux" style={{ marginBottom: '0.85rem' }}>
-              <Sparkles size={14} color="#7A9B76" />
+            <div className="badge badge-cerulean" style={{ marginBottom: '0.85rem' }}>
+              <Sparkles size={14} color="#2274A5" />
               <span>PRIVATE ARCHITECTURE PREVIEW</span>
             </div>
 
-            <h3 style={{ fontSize: '1.65rem', marginBottom: '0.5rem', color: '#C8BFC7' }}>
+            <h3 style={{ fontSize: '1.65rem', marginBottom: '0.5rem', color: '#E9F1F7' }}>
               Reserve Your Live CMS Studio Demo
             </h3>
-            <p style={{ fontSize: '0.875rem', color: '#8A7E72', marginBottom: '1.75rem' }}>
+            <p style={{ fontSize: '0.875rem', color: '#E7DFC6', opacity: 0.85, marginBottom: '1.75rem' }}>
               Get a tailored walkthrough with a Velvet Core Architect. Explore our GraphQL edge pipelines, 
               custom block schemas, and self-hosted MongoDB capabilities.
             </p>
@@ -131,7 +131,7 @@ export default function DemoModal({ isOpen, onClose, showToast }) {
                     className="form-input"
                     value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                    style={{ background: '#090302', color: '#C8BFC7' }}
+                    style={{ background: '#131B23', color: '#E9F1F7' }}
                   >
                     <option value="Tech Lead / Architect">Tech Lead / Architect</option>
                     <option value="Design Director / Head of UX">Design Director / UX</option>
@@ -167,34 +167,34 @@ export default function DemoModal({ isOpen, onClose, showToast }) {
               width: '60px',
               height: '60px',
               borderRadius: '50%',
-              background: 'rgba(122, 155, 118, 0.2)',
-              border: '2px solid #7A9B76',
+              background: 'rgba(34, 116, 165, 0.2)',
+              border: '2px solid #2274A5',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               margin: '0 auto 1.25rem'
             }}>
-              <CheckCircle2 size={32} color="#7A9B76" />
+              <CheckCircle2 size={32} color="#2274A5" />
             </div>
 
-            <h3 style={{ fontSize: '1.65rem', marginBottom: '0.5rem', color: '#C8BFC7' }}>
+            <h3 style={{ fontSize: '1.65rem', marginBottom: '0.5rem', color: '#E9F1F7' }}>
               VIP Access Confirmed
             </h3>
-            <p style={{ fontSize: '0.9rem', color: '#8A7E72', maxWidth: '380px', margin: '0 auto 1.5rem' }}>
+            <p style={{ fontSize: '0.9rem', color: '#E7DFC6', opacity: 0.85, maxWidth: '380px', margin: '0 auto 1.5rem' }}>
               Your reservation has been recorded into our MERN content engine. A Solutions Architect will 
               reach out within 2 hours.
             </p>
 
             <div style={{
-              background: 'rgba(90, 35, 40, 0.25)',
-              border: '1px solid rgba(90, 35, 40, 0.6)',
+              background: 'rgba(34, 116, 165, 0.15)',
+              border: '1px solid rgba(34, 116, 165, 0.5)',
               padding: '0.85rem',
               borderRadius: '10px',
               marginBottom: '1.75rem',
               display: 'inline-block'
             }}>
-              <span style={{ fontSize: '0.75rem', color: '#8A7E72', display: 'block' }}>RESERVATION TICKET</span>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '1.1rem', fontWeight: 700, color: '#7A9B76' }}>
+              <span style={{ fontSize: '0.75rem', color: '#E7DFC6', opacity: 0.85, display: 'block' }}>RESERVATION TICKET</span>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '1.1rem', fontWeight: 700, color: '#2274A5' }}>
                 {reservationId}
               </span>
             </div>

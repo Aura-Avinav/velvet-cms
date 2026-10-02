@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Layers, ArrowRight, Check, Heart, Mail } from 'lucide-react';
 
 const PALETTE = [
-  { name: 'Pale Slate', hex: '#C8BFC7', textDark: true },
-  { name: 'Sage Green', hex: '#7A9B76', textDark: true },
-  { name: 'Grey Olive', hex: '#8A7E72', textDark: false },
-  { name: 'Night Bordeaux', hex: '#5A2328', textDark: false },
-  { name: 'Pitch Black', hex: '#090302', textDark: false, border: true }
+  { name: 'Rich Cerulean', hex: '#2274A5', textDark: false },
+  { name: 'Sand Dune', hex: '#E7DFC6', textDark: true },
+  { name: 'Alice Blue', hex: '#E9F1F7', textDark: true },
+  { name: 'Ink Black', hex: '#131B23', textDark: false, border: true },
+  { name: 'Coffee Bean', hex: '#2A140E', textDark: false }
 ];
 
 export default function Footer({ showToast }) {
@@ -43,18 +43,18 @@ export default function Footer({ showToast }) {
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
           gap: '3rem',
           paddingBottom: '3.5rem',
-          borderBottom: '1px solid rgba(138, 126, 114, 0.2)'
+          borderBottom: '1px solid rgba(231, 223, 198, 0.16)'
         }}>
           {/* Newsletter Column */}
           <div>
-            <div className="badge badge-sage" style={{ marginBottom: '1rem' }}>
+            <div className="badge badge-sand" style={{ marginBottom: '1rem' }}>
               <Mail size={13} />
               <span>THE EDITORIAL DISPATCH</span>
             </div>
-            <h3 style={{ fontSize: '1.6rem', color: '#C8BFC7', marginBottom: '0.6rem' }}>
+            <h3 style={{ fontSize: '1.6rem', color: '#E9F1F7', marginBottom: '0.6rem' }}>
               Architectural Insights. Delivered Bi-Weekly.
             </h3>
-            <p style={{ fontSize: '0.9rem', color: '#8A7E72', marginBottom: '1.5rem', maxWidth: '420px' }}>
+            <p style={{ fontSize: '0.9rem', color: '#E7DFC6', opacity: 0.85, marginBottom: '1.5rem', maxWidth: '420px' }}>
               Deep-dives into headless content topologies, Next.js server component caching, and luxury editorial design patterns.
             </p>
 
@@ -75,7 +75,7 @@ export default function Footer({ showToast }) {
                 </button>
               </form>
             ) : (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#7A9B76', fontWeight: 600, fontSize: '0.9rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#2274A5', fontWeight: 600, fontSize: '0.9rem' }}>
                 <Check size={16} />
                 <span>You're on the priority list. Welcome aboard.</span>
               </div>
@@ -84,10 +84,10 @@ export default function Footer({ showToast }) {
 
           {/* Palette Showcase Column (Strictly adhering to user requirements) */}
           <div>
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C8BFC7', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.6rem' }}>
+            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#E9F1F7', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.6rem' }}>
               Strict Palette Fidelity Guarantee
             </span>
-            <p style={{ fontSize: '0.85rem', color: '#8A7E72', marginBottom: '1.25rem' }}>
+            <p style={{ fontSize: '0.85rem', color: '#E7DFC6', opacity: 0.85, marginBottom: '1.25rem' }}>
               This landing page is strictly authored using only the 5 harmonious swatches provided:
             </p>
 
@@ -99,8 +99,8 @@ export default function Footer({ showToast }) {
               borderRadius: '12px',
               overflow: 'hidden',
               padding: '0.5rem',
-              background: '#090302',
-              border: '1px solid rgba(138, 126, 114, 0.25)'
+              background: '#131B23',
+              border: '1px solid rgba(231, 223, 198, 0.2)'
             }}>
               {PALETTE.map((swatch, idx) => (
                 <div 
@@ -110,7 +110,7 @@ export default function Footer({ showToast }) {
                     borderRadius: '8px',
                     padding: '0.75rem 0.4rem',
                     textAlign: 'center',
-                    border: swatch.border ? '1px solid rgba(138, 126, 114, 0.4)' : 'none',
+                    border: swatch.border ? '1px solid rgba(231, 223, 198, 0.35)' : 'none',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
@@ -121,7 +121,7 @@ export default function Footer({ showToast }) {
                     fontSize: '0.65rem',
                     fontWeight: 800,
                     fontFamily: 'var(--font-mono)',
-                    color: swatch.textDark ? '#090302' : '#C8BFC7'
+                    color: swatch.textDark ? '#131B23' : '#E9F1F7'
                   }}>
                     {swatch.hex}
                   </span>
@@ -129,7 +129,7 @@ export default function Footer({ showToast }) {
                     fontSize: '0.55rem',
                     fontWeight: 600,
                     textTransform: 'uppercase',
-                    color: swatch.textDark ? 'rgba(9, 3, 2, 0.8)' : 'rgba(200, 191, 199, 0.8)'
+                    color: swatch.textDark ? 'rgba(19, 27, 35, 0.85)' : 'rgba(233, 241, 247, 0.85)'
                   }}>
                     {swatch.name}
                   </span>
@@ -148,23 +148,24 @@ export default function Footer({ showToast }) {
           flexWrap: 'wrap',
           gap: '1rem',
           fontSize: '0.85rem',
-          color: '#8A7E72'
+          color: '#E7DFC6',
+          opacity: 0.85
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <div className="brand-symbol" style={{ width: '28px', height: '28px' }}>
-              <Layers size={14} color="#7A9B76" />
+              <Layers size={14} color="#E9F1F7" />
             </div>
-            <span style={{ color: '#C8BFC7', fontWeight: 700 }}>
+            <span style={{ color: '#E9F1F7', fontWeight: 700 }}>
               VELVET CMS
             </span>
             <span>• Full-stack MERN & Edge Architecture</span>
           </div>
 
           <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <a href="#studio" style={{ color: '#8A7E72' }}>Studio Demo</a>
-            <a href="#features" style={{ color: '#8A7E72' }}>Architecture</a>
-            <a href="#apis" style={{ color: '#8A7E72' }}>API Engine</a>
-            <a href="#pricing" style={{ color: '#8A7E72' }}>Pricing</a>
+            <a href="#studio" style={{ color: '#E7DFC6' }}>Studio Demo</a>
+            <a href="#features" style={{ color: '#E7DFC6' }}>Architecture</a>
+            <a href="#apis" style={{ color: '#E7DFC6' }}>API Engine</a>
+            <a href="#pricing" style={{ color: '#E7DFC6' }}>Pricing</a>
           </div>
 
           <div>
